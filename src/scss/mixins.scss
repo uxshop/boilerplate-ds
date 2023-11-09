@@ -1,0 +1,17 @@
+@mixin darkmode {
+	[data-theme='dark'] & {
+		@content;
+	}
+}
+
+@mixin theme-dark {
+	[data-theme='dark'] {
+		@content;
+	}
+}
+
+@mixin mobile {
+	@media only screen and (max-width: 800px) {
+		@content;
+	}
+}
